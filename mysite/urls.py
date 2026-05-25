@@ -1,3 +1,5 @@
+#ادرس های مورد نیاز سایت باید اینجا تعریف بشن.
+
 """
 URL configuration for mysite project.
 

@@ -1,3 +1,5 @@
+#پل ارتباط با apach مخصوص رکوئست های کاربر
+
 """
 WSGI config for mysite project.
 

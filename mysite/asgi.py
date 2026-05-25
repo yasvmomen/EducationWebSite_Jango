@@ -1,3 +1,5 @@
+#مربوط به شاخص عملکردهایی مثل وب سوکت و چنل و ...
+
 """
 ASGI config for mysite project.
 
