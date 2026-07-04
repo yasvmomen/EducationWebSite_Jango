@@ -19,8 +19,6 @@ def about_view (request) :
     #return HttpResponse ('<h1>about Page ...</h1>')
     return render(request, 'website/about.html')
 
-
-
 def contact_view (request) :
     #return HttpResponse ('<h1>contact Page ...</h1>')
     return render(request, 'website/contact.html')
