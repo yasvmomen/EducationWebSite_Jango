@@ -22,3 +22,6 @@ def about_view (request) :
 def contact_view (request) :
     #return HttpResponse ('<h1>contact Page ...</h1>')
     return render(request, 'website/contact.html')
+
+def test_view (request) :
+    return render(request, 'website/test.html', {'name' : 'ostad', 'famil' : 'farahi'})

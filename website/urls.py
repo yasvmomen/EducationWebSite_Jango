@@ -12,5 +12,6 @@ urlpatterns = [
     path ('home', home_view , name= 'index'),
     path ('', home_view , name= 'index'),
     path ('about', about_view , name= 'about'),
-    path ('contact', contact_view , name= 'contact')
+    path ('contact', contact_view , name= 'contact'),
+    path ('test', test_view , name= 'test')
 ]
