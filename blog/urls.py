@@ -9,5 +9,6 @@ urlpatterns = [
     path ('', blog_view , name= 'index'),
     path ('<int:pid>',blog_single,name='single'),
     #path ('post-<int:pid>', ttest, name= 'ttest')
-    path ('author/<str:author_username>',blog_view,name='author')
+    path ('author/<str:author_username>',blog_view,name='author'),
+    path ('search/',blog_search,name='search')
 ]

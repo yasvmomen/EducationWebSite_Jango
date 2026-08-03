@@ -23,3 +23,14 @@ def ttest (request, pid) :
     posts = get_object_or_404 (post, pk=pid)
     context = {'post' : posts}
     return render (request, 'ttest.html', context)
+
+
+def blog_search (request) :
+    posts = post.objects.filter(status=1) 
+    if request.method=='GET' :
+        print(request.GET.get('s'))
+        if s := request.GET.get('s') :
+            posts = posts.filter(Content__contains=s)
+       
+    context = {'posts' : posts}
+    return render (request, 'blog/blog-home.html', context)
