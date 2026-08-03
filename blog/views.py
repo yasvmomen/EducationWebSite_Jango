@@ -4,8 +4,10 @@ from blog.models import post
 # Create your views here.
 app_name = 'blog'
 
-def blog_view (request) :
+def blog_view (request,author_username=None) :
     posts = post.objects.filter(status=1)
+    if author_username :
+        posts=posts.filter(auther__username=author_username)
     context = {'posts' : posts}
     return render (request, 'blog/blog-home.html', context)
 
